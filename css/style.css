@@ -1,12 +1,12 @@
 /* Typography */
 @font-face {
   font-family: "Tw Cen Mt Bold";
-  src: url("/fonts/TwCenMTStdBold.otf");
+  src: url("../fonts/TwCenMTStdBold.otf");
 }
 
 @font-face {
   font-family: "Tw Cen Mt Regular";
-  src: url("/fonts/TwCenMT.otf");
+  src: url("../fonts/TwCenMT.otf");
 }
 
 h1 {
