@@ -1,0 +1,388 @@
+/* Typography */
+@font-face {
+  font-family: "Tw Cen Mt Bold";
+  src: url("/fonts/TwCenMTStdBold.otf");
+}
+
+@font-face {
+  font-family: "Tw Cen Mt Regular";
+  src: url("/fonts/TwCenMT.otf");
+}
+
+h1 {
+  font-family: "Tw Cen Mt Bold", Arial;
+  font-size: 40px;
+  color: #B6001E;
+}
+
+h2 {
+  font-family: "Tw Cen Mt Bold", Arial;
+  font-size: 30px;
+}
+
+h3 {
+  font-family: "Tw Cen Mt Regular", Arial;
+  font-size: 25px;
+}
+
+p {
+  font-family: Arial;
+  font-size: 18px;
+}
+
+button {
+  display: block;
+  align-items: center;
+  font-family: Arial;
+  font-weight: 600;
+  font-size: 20px;
+  color: #0000FF;
+
+  border: 3px solid #0000FF;
+  border-radius: 38.5px;
+  background-color: transparent;
+  padding-left: 55px;
+  padding-right: 55px;
+  height: 65px;
+}
+
+button:hover {
+  color: #FFFFFF;
+  background-color: #0000FF;
+  cursor: pointer;
+}
+
+.currentPage {
+  font-family: "Tw Cen Mt Bold", Arial;
+  font-size: 25px;
+}
+
+.navButton {
+  font-family: "Tw Cen Mt Bold", Arial;
+  font-size: 25px;
+}
+
+.navButton:hover {
+  color: #000000;
+  cursor: pointer;
+}
+
+/* Header */
+
+body {
+  margin: 0;
+}
+
+header {
+  background-color: #FFFFFF;
+  padding: 15px;
+}
+
+.logo {
+  width: 35%;
+  max-width: 600px;
+  height: auto;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  padding-left: 35px;
+}
+
+header ul {
+  float: right;
+  color: #0000ff;
+}
+
+ul li:first-child {
+  color: #000000;
+}
+
+header li {
+  display: inline-block;
+  padding-right: 20px;
+  padding: 0px 35px;
+}
+
+header p {
+  display: inline-block;
+}
+
+/* ABOUT ME Section */
+.aboutMe {
+  display: flex;
+}
+
+.content {
+  justify-content: flex-start;
+  margin: 0 auto;
+  padding-left: 50px;
+  background-color: #FFFFFF;
+  text-align: left;
+  line-height: 1.4;
+}
+
+.me {
+  justify-content: flex-end;
+  width: 27%;
+  max-width: 600px;
+  min-width: 400px;
+  height: auto;
+  background-color: #FFFFFF;
+  padding-left: 230px;
+  padding-right: 60px;
+  object-fit: contain;
+}
+
+/* MY PROJECTS Section */
+.myProjects {
+  padding: 0px 50px;
+  background-color: #FFFFFF;
+}
+
+.workGrid {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 350px 350px;
+  grid-template-areas:
+    "img1 content1"
+    "img2 content2";
+  align-content: start;
+}
+
+.workGrid img {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  display: block;
+}
+
+.img1 {
+  grid-area: img1;
+}
+
+.img2 {
+  grid-area: img2;
+}
+
+.content1 {
+  grid-area: content1;
+  transform: translate(0, -7%);
+}
+
+.content2 {
+  grid-area: content2;
+  transform: translate(0, -7%);
+}
+
+.img1,
+.img2,
+.content1,
+.content2 {
+  padding-right: 80px;
+}
+
+/* MY UX SKILLSET Section */
+.mySkillset {
+  padding: 0px 50px;
+  padding-top: 0;
+  background-color: #FFFFFF;
+}
+
+.flexContainer {
+  display: flex;
+}
+
+.flexContainer div {
+  width: 33%;
+  padding-right: 20px;
+}
+
+/* TOOLS I KNOW Section */
+.toolsIKnow {
+  padding: 0px 50px;
+  padding-top: 10px;
+  background-color: #FFFFFF;
+}
+
+.tools {
+  display: flex;
+  align-items: center;
+}
+
+.tools img {
+  justify-content: center;
+  padding: 17px;
+  object-fit: cover;
+  height: 120px;
+
+}
+
+.software-label {
+  text-align: center;
+  transform: translate(0, -180%);
+}
+
+.software-label-doubled {
+  text-align: center;
+  transform: translate(0, -65%);
+}
+
+/* GET IN TOUCH Section */
+.flex-container {
+  position: relative;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding: 0px 50px;
+}
+
+.vertical-line {
+  position: absolute;
+  top: 48.1%;
+  left: 72%;
+  transform: translate(-50%, -50%);
+  height: calc(107.2%);
+  border-left: 1px solid;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.onlinePresence {
+  position: absolute;
+  top: 0%;
+  left: 74%;
+}
+
+/* Contact Form */
+
+.contactForm {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-family: Arial, sans-serif;
+  font-size: 12px;
+}
+
+.contactSubmit {
+  display: flex;
+  justify-content: center;
+  width: 62%;
+  padding: 25px;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-areas: 
+    "name name"
+    "firstname lastname"
+    "email email"
+    "subject subject"
+    "message message";
+  grid-gap: 16px;
+  grid-row-gap: 0px;
+  width: 900px;
+}
+
+.field.first-name {
+  grid-area: firstname;
+}
+
+.field.last-name {
+  grid-area: lastname;
+}
+
+.form-item.field.email.required {
+  grid-area: email;
+}
+
+.form-item.field.text.required {
+  grid-area: subject;
+}
+
+.form-item.field.textarea.required {
+  grid-area: message;
+}
+
+.field label {
+  margin-bottom: 8px;
+}
+
+.form-item {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 8px;
+  width: 100%;
+}
+
+.input {
+  width: 100%;
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #CCCCCC;
+}
+
+.form-item input {
+  height: 40px;
+  padding: 10px;
+}
+
+.form-item textarea {
+  height: 70px;
+  resize: none;
+  padding: 10px;
+}
+
+.form-item input,
+.form-item textarea {
+  background-color: #FAFAFA;
+  border: 1px solid #CCCCCC;
+  border-radius: 3px;
+  width: 100%;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+.form-item.field.first-name > label,
+.form-item.field.last-name > label {
+  margin-top: 8px;
+  font-size: 10px;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  margin-top: 8px;
+}
+
+.caption {
+  display: flex;
+  flex-direction: column;
+}
+
+.caption-text {
+  font-size: 16px;
+  line-height: 24px;
+  color: #666666;
+}
+
+.field-control {
+  height: 36px;
+  font-size: 16px;
+  line-height: 24px;
+  color: #1c1c1c;
+  background-color: #f7f7f7;
+  border: none;
+  border-radius: 4px;
+}
+
+textarea.field-element {
+  height: 160px;
+  resize: vertical;
+}
+
+/* Footer */
+
+footer p {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 50px;
+}
