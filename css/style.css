@@ -204,32 +204,42 @@ header p {
 
 /* TOOLS I KNOW Section */
 .toolsIKnow {
-  padding: 0px 50px;
-  padding-top: 10px;
+  padding: 15px 50px;
   background-color: #FFFFFF;
+  white-space: nowrap;
+  max-width: 1200px;
 }
 
 .tools {
   display: flex;
   align-items: center;
+  justify-content: space-between;
+}
+
+.tools div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: calc(100% / 40px);
+  margin: 0 12.5px;
+  text-align: center;
 }
 
 .tools img {
-  justify-content: center;
-  padding: 17px;
-  object-fit: cover;
-  height: 120px;
-
+  max-width: 130px;
+  min-width: 100px;
+  height: auto;
 }
 
 .software-label {
   text-align: center;
-  transform: translate(0, -180%);
+  transform: translate(0, -70%);
 }
 
 .software-label-doubled {
   text-align: center;
-  transform: translate(0, -65%);
+  transform: translate(0, -14%);
 }
 
 /* GET IN TOUCH Section */
