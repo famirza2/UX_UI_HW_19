@@ -120,6 +120,12 @@ header p {
   line-height: 1.4;
 }
 
+.contactMe {
+  display: flex;
+  justify-content: center;
+  padding: 25px;
+}
+
 .me {
   justify-content: flex-end;
   width: 27%;
