@@ -239,7 +239,8 @@ header p {
 
 .software-label-doubled {
   text-align: center;
-  transform: translate(0, -14%);
+  margin-top: 0px;
+  transform: translate(0, 8%);
 }
 
 /* GET IN TOUCH Section */
