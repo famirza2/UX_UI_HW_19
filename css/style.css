@@ -63,7 +63,7 @@ button:hover {
 }
 
 .navButton:hover {
-  color: #000000;
+  color: #00B589;
   cursor: pointer;
 }
 
@@ -93,7 +93,7 @@ header ul {
 }
 
 ul li:first-child {
-  color: #000000;
+  color: #00B589;
 }
 
 header li {
@@ -122,8 +122,8 @@ header p {
 
 .contactMe {
   display: flex;
-  justify-content: center;
-  padding: 25px;
+  justify-content: left;
+  padding: 25px 0px;
 }
 
 .me {
@@ -141,24 +141,29 @@ header p {
 /* MY PROJECTS Section */
 .myProjects {
   padding: 0px 50px;
+  padding-top: 3px;
   background-color: #FFFFFF;
 }
 
 .workGrid {
   display: grid;
   grid-template-columns: 50% 50%;
-  grid-template-rows: 350px 350px;
+  grid-template-rows: 310px 280px;
   grid-template-areas:
     "img1 content1"
     "img2 content2";
   align-content: start;
+  padding-top: 10px;
 }
 
 .workGrid img {
+  display: block;
+  height: 240px;
   width: 100%;
   max-width: 800px;
+  object-fit: contain;
   margin: 0 auto;
-  display: block;
+
 }
 
 .img1 {
@@ -171,20 +176,22 @@ header p {
 
 .content1 {
   grid-area: content1;
-  transform: translate(0, -7%);
+  width: calc(100% + 100px);
 }
 
 .content2 {
   grid-area: content2;
-  transform: translate(0, -7%);
+  width: calc(100% + 100px);
 }
 
-.img1,
-.img2,
-.content1,
-.content2 {
-  padding-right: 80px;
+.img1, .img2 {
+  transform: translate(-85px, 0px);
 }
+
+.content1, .content2 {
+  transform: translate(-105px, -25px);
+}
+
 
 /* MY UX SKILLSET Section */
 .mySkillset {
@@ -199,15 +206,17 @@ header p {
 
 .flexContainer div {
   width: 33%;
-  padding-right: 20px;
+  padding-right: 110px;
+  transform: translate(0, -15px);
 }
 
-/* TOOLS I KNOW Section */
-.toolsIKnow {
-  padding: 15px 50px;
+/* MY TECH SKILLSET Section */
+.mytechSkillset {
+  padding: 5px 50px;
+  padding-bottom: 40px;
   background-color: #FFFFFF;
   white-space: nowrap;
-  max-width: 1200px;
+  max-width: 1380px;
 }
 
 .tools {
@@ -227,26 +236,26 @@ header p {
 }
 
 .tools img {
-  max-width: 130px;
-  min-width: 100px;
+  max-width: 90px;
+  min-width: 70px;
   height: auto;
 }
 
 .software-label {
   text-align: center;
-  transform: translate(0, -70%);
+  transform: translate(0, -80%);
 }
 
 .software-label-doubled {
   text-align: center;
   margin-top: 0px;
-  transform: translate(0, 8%);
+  transform: translate(0, 2%);
 }
 
 /* GET IN TOUCH Section */
 .flex-container {
   position: relative;
-  padding-top: 20px;
+  padding-top: 40px;
   padding-bottom: 20px;
   padding: 0px 50px;
 }
@@ -254,7 +263,7 @@ header p {
 .vertical-line {
   position: absolute;
   top: 48.1%;
-  left: 72%;
+  left: 75%;
   transform: translate(-50%, -50%);
   height: calc(107.2%);
   border-left: 1px solid;
@@ -264,17 +273,15 @@ header p {
 
 .onlinePresence {
   position: absolute;
-  top: 0%;
-  left: 74%;
+  top: -3%;
+  left: 80%;
 }
 
-.linkedInhyperlink p {
-  color: #0000FF;
-  text-decoration: underline;
-}
-
-.linkedInhyperlink:hover {
-  cursor: pointer;
+.linkedInimage img {
+  max-width: 175px;
+  min-width: 155px;
+  height: auto;
+  padding-top: 15px;
 }
 
 /* Contact Form */
@@ -285,19 +292,19 @@ header p {
   align-items: flex-start;
   font-family: Arial, sans-serif;
   font-size: 12px;
+  transform: translate(0, -2%);
 }
 
 .contactSubmit {
   display: flex;
-  justify-content: center;
-  width: 62%;
-  padding: 25px;
+  justify-content: left;
+  padding: 25px 0px;
 }
 
 .form-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-areas: 
+  grid-template-areas:
     "name name"
     "firstname lastname"
     "email email"
@@ -305,7 +312,7 @@ header p {
     "message message";
   grid-gap: 16px;
   grid-row-gap: 0px;
-  width: 900px;
+  width: 950px;
 }
 
 .field.first-name {
@@ -367,8 +374,8 @@ header p {
   font-family: Arial, sans-serif;
 }
 
-.form-item.field.first-name > label,
-.form-item.field.last-name > label {
+.form-item.field.first-name>label,
+.form-item.field.last-name>label {
   margin-top: 8px;
   font-size: 10px;
 }
@@ -411,4 +418,6 @@ footer p {
   display: flex;
   justify-content: flex-end;
   margin-right: 50px;
+  margin-top: 25px;
+  margin-bottom: 25px;
 }
