@@ -67,6 +67,23 @@ button:hover {
   cursor: pointer;
 }
 
+.scroll-to-top {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 99;
+}
+
+.scroll-to-top img {
+  width: 40px;
+  height: 40px;
+}
+
+.scroll-to-top.show {
+  display: block;
+}
+
 /* Header */
 
 body {
