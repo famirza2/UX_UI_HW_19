@@ -46,6 +46,22 @@ button {
   height: 65px;
 }
 
+.EcoGeekbutton {
+  display: block;
+  align-items: center;
+  font-family: Arial;
+  font-weight: 600;
+  font-size: 20px;
+  color: #0000FF;
+
+  border: 3px solid #0000FF;
+  border-radius: 38.5px;
+  background-color: transparent;
+  padding-left: 55px;
+  padding-right: 55px;
+  height: 65px;
+}
+
 button:hover {
   color: #FFFFFF;
   background-color: #0000FF;
